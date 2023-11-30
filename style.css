@@ -1,0 +1,44 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+.hpat {
+  animation: 2s ease-out 0s 1 FadeIn;
+}
+
+@keyframes animtext {
+  from {
+    width: 0;
+    transition: all 2s ease-in-out;
+  }
+}
+
+.hdua {
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: animtext 4s steps(80, end);
+  transition: all cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
